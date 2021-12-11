@@ -6,7 +6,7 @@ dept_name varchar
 dept_emp
 ----
 emp_no varchar pk fk - employees.emp_no
-dept_no varchar fk >- departments.dept_no
+dept_no varchar pk fk >- departments.dept_no
 from_date date
 to_date date
 
@@ -36,6 +36,6 @@ to_date date
 titles
 ----
 emp_no varchar pk fk >- employees.emp_no
-title varchar
-from_date date
+title varchar pk
+from_date date pk
 to_date date
